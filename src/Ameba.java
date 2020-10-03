@@ -1,4 +1,4 @@
-public class Task2 {
+public class Ameba {
     public static void main(String[] args) {
         int ameba = 1;
 

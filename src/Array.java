@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task4 {
+public class Array {
     public static void main(String[] args) {
         System.out.println("Введите число больше трёх");
         Scanner scan = new Scanner(System.in);

@@ -1,7 +1,7 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Task5 {
+public class Recursion {
     public static boolean recursion(int n, int i) {
 
         if (n < 2) {
