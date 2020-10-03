@@ -1,21 +1,18 @@
 public class Run {
     public static void main(String[] args) {
 
-        int i = 0;
-        int day = 10;
-
-        int sum = 0;
-        int percent = 10 / 10;//10 %- посчитано так,чтобы не менять на float;
-
+        float i = 0.0f;
+        float distance = 10.0f;
+        float sum = 0.0f;
 
         while (i < 7) {
-            i++;
-            sum = sum + day;
-            day = day + percent;
+            float ten_percent = (distance / 100) * 10;
 
+            i++;
+            sum = sum + distance;
+            distance = distance + ten_percent;
         }
         System.out.println("Суммарно спортсмен пробежал за неделю " + sum + " км!");
-
     }
 }
 

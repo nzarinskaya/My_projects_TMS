@@ -13,22 +13,19 @@ public class Task4 {
         if (n <= 3) {
             System.out.println("Вы ввели неверное число.");
         }
-
         int[] array = new int[n];
-
         int index = 0;
 
         for (int i = 0; i < array.length; i++) {
             int r = (int) (Math.random() * (n + 1));
             array[i] = r;
 
-            if (r % 2 == 0 & r != 0) {
+            if (r % 2 == 0 && r != 0) {
                 index = index + 1;
 
             }
         }
         System.out.println("Массив из случайных чисел " + Arrays.toString(array));
-
 
         int[] array2 = new int[index];
         int ch = 0;
@@ -38,12 +35,10 @@ public class Task4 {
                 ch = ch + 1;
             }
         }
-
         System.out.println("Массив из  " + Arrays.toString(array2));
-
-
     }
 }
+
 
 
 
