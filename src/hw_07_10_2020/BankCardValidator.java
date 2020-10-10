@@ -24,7 +24,7 @@ public class BankCardValidator {
             }
 
             public void validateData() {
-                if (bankCardNumber.length() == 16 & bankCardVaried != "" & bankCardOwner != "" & bankCardCVV >= 100 & bankCardPeriod != "") {
+                if (bankCardNumber.length() == 16 & bankCardVaried.length() != 0 & bankCardOwner.length() != 0 & bankCardCVV >= 100 & bankCardPeriod.length() != 0) {
                     System.out.println("Bank card data is correct");
                 } else {
                     System.out.println("Bank card data is incorrect");
@@ -34,6 +34,7 @@ public class BankCardValidator {
         BankCardData bankCardData = new BankCardData();
         bankCardData.validateData();
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String bankCardData = scanner.nextLine();
@@ -53,7 +54,6 @@ public class BankCardValidator {
         BankCardValidator.validateBankCardData(bankCardData, varied, owner, CVV, period);
     }
 }
-
 
 
 
