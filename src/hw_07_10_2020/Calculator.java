@@ -43,20 +43,14 @@ public class Calculator {
         System.out.println(numeral.sqrt(numeralA, numeralB));
         System.out.println(numeral.pow(numeralA, numeralB));
     }
-
     private static int sum(int numeralA, int numeralB) {
-        int sum = numeralA + numeralB;
-        return sum;
+        return numeralA + numeralB;
     }
-
     private static int sqrt(int numeralA, int numeralB) {
-        int sqrt = (int) Math.sqrt(numeralA + numeralB);
-        return sqrt;
+        return (int) Math.sqrt(numeralA + numeralB);
     }
-
     private static int pow(int numeralA, int numeralB) {
-        int pow = (int) Math.pow(numeralA, numeralB);
-        return pow;
+        return (int) Math.pow(numeralA, numeralB);
     }
 }
 

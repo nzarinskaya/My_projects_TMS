@@ -57,7 +57,7 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        List<Student> list = new ArrayList<Student>();
+        List list = new ArrayList<>();
         list.add(new Student("Ivan", 2));
         list.add(new Student("Egor", 2));
         list.add(new Student("Yan", 1));
