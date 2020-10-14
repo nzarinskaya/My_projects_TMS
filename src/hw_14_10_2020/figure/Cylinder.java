@@ -8,6 +8,7 @@ public class Cylinder extends SolidOfRevolution {
     public Cylinder(double radius, double height) {
         super(radius);
         super.volume = Math.PI * Math.pow(radius, 2) * height;
+        this.height = height;
     }
 }
 
