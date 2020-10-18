@@ -1,6 +1,6 @@
 package hw_14_10_2020.temperature;
 
-public class KelvinConverter extends Temperature implements Converter {
+public class KelvinConverter implements Converter {
 
     @Override
     public void convert(double temperatureCelsius) {

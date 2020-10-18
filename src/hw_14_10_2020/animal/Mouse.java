@@ -1,9 +1,5 @@
 package hw_14_10_2020.animal;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
-
 public class Mouse extends Animal implements ToBeEaten {
 
     public Mouse(String typeOfFood, String family, String breed) {
@@ -11,7 +7,7 @@ public class Mouse extends Animal implements ToBeEaten {
     }
 
     @Override
-    protected void speake() {
+    protected void speak() {
         System.out.println("Piii ");
     }
 

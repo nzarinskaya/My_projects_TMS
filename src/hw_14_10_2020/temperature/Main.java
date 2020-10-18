@@ -1,6 +1,6 @@
 package hw_14_10_2020.temperature;
 
-public class Temperature {
+public class Main {
     public static void main(String[] args) {
         CelsiusConverter celsiusConverter = new CelsiusConverter();
         celsiusConverter.convert(32.0);

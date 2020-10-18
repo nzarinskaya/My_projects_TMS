@@ -6,7 +6,7 @@ public class Dog extends Animal implements Eat {
         super(typeOfFood, family, breed);
     }
     @Override
-    protected void speake() {
+    protected void speak() {
         System.out.println("Gaw ");
     }
 

@@ -6,7 +6,7 @@ public class Cat extends Animal implements ToBeEaten, Eat {
     }
 
     @Override
-    protected void speake() {
+    protected void speak() {
         System.out.println("Myaooo ");
     }
 

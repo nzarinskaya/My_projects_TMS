@@ -22,32 +22,10 @@ public abstract class Animal {
         return breed;
     }
 
-    protected abstract void speake();
+    protected abstract void speak();
     protected void run(){
         System.out.println("Бегает");
     }
     protected abstract void displayInfo();
-
-
-    public static void main(String[] args) {
-        Mouse mouse = new Mouse("всеядная,","семейство мышиных,","полевая.");
-        mouse.displayInfo();
-        mouse.run();
-        mouse.speake();
-        mouse.toBeEaten();
-
-        Dog dog = new Dog("плотоядная,","семейство псовых,","белая швейцарская овчарка.");
-        dog.displayInfo();
-        dog.run();
-        dog.speake();
-        dog.eat();
-
-        Cat cat = new Cat("плотоядная,","семейство кошачьих,","абиссинская.");
-        cat.displayInfo();
-        cat.run();
-        cat.speake();
-        cat.eat();
-        cat.toBeEaten();
-    }
 }
 
