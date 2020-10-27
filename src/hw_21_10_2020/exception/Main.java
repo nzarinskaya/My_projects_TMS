@@ -8,6 +8,9 @@ public class Main {
 
         try {
             car1.start();
+            car2.start();
+            car3.start();
+
         } catch (DoesNotStartException e) {
             System.out.println(e.getMessage());
         }

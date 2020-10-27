@@ -4,9 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Car {
-    String brand;
-    int cost;
-    int speed;
+    private String brand;
+    private int cost;
+    private int speed;
 
     public Car(String brand, int cost, int speed) {
         this.brand = brand;
@@ -17,19 +17,19 @@ public class Car {
     public Car() {
     }
 
-    public String getBrand() {
+    private String getBrand() {
         return brand;
     }
 
-    public void setBrand(String brand) {
+    private void setBrand(String brand) {
         this.brand = brand;
     }
 
-    public int getCost() {
+    private int getCost() {
         return cost;
     }
 
-    public void setCost(int cost) {
+    private void setCost(int cost) {
         this.cost = cost;
     }
 
@@ -37,7 +37,7 @@ public class Car {
         return speed;
     }
 
-    public void setSpeed(int speed) {
+    private void setSpeed(int speed) {
         this.speed = speed;
     }
 
@@ -45,7 +45,7 @@ public class Car {
     int b = 20;
     int random = a + (int) (Math.random() * b);
 
-    public int getRandom() {
+    private int getRandom() {
         return random;
     }
     protected void start() throws DoesNotStartException {
