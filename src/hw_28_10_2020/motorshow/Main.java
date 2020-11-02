@@ -8,7 +8,7 @@ import java.util.ListIterator;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IncorrectNumberException,NoModelException,IncorrectBrandNameException {
+    public static void main(String[] args) throws IncorrectNumberException, NoModelException, IncorrectBrandNameException {
         LinkedList<Car> cars = new LinkedList<>();
         Car chevrolet = new Car("Chevrolet ", "Captiva ", 2011);
         Car toyota = new Car("Toyota ", "Camry ", 2018);
@@ -38,7 +38,7 @@ public class Main {
                 int year = scanner.nextInt();
 
                 cars.add(new Car(brand, model, year));
-                System.out.println("Вы добавили машину в автосалон!\n"+cars.peekLast());
+                System.out.println("Вы добавили машину в автосалон!\n" + cars.peekLast());
                 break;
             case 2:
                 int number = 0;
@@ -49,29 +49,30 @@ public class Main {
                 Scanner sc = new Scanner(System.in);
                 String brand1 = sc.nextLine();
 
-                switch (brand1){
+                switch (brand1) {
 
                     case "Chevrolet": {
-                    System.out.println("Марка - " + chevrolet.getBrand() + "\nМодель - " + chevrolet.getModel() + "\nГод выпуска - " + chevrolet.getYearOfIssue());
-                }
-                break;
+                        System.out.println("Марка - " + chevrolet.getBrand() + "\nМодель - " + chevrolet.getModel() + "\nГод выпуска - " + chevrolet.getYearOfIssue());
+                    }
+                    break;
                     case "Toyota": {
-                    System.out.println("Марка - " + toyota.getBrand() + "\nМодель - " + toyota.getModel() + "\nГод выпуска - " + toyota.getYearOfIssue());
-                }
-                break;
-                case "Mercedes-Benz": {
-                    System.out.println("Марка - " + mercedes_benz.getBrand() + "\nМодель - " + mercedes_benz.getModel() + "\nГод выпуска - " + mercedes_benz.getYearOfIssue());
-                }
-                break;
-                    case "Skoda":{
-                    System.out.println("Марка - " + skoda.getBrand() + "\nМодель - " + skoda.getModel() + "\nГод выпуска - " + skoda.getYearOfIssue());
-                }
-                break;
-                case "Audi": {
-                    System.out.println("Марка - " + audi.getBrand() + "\nМодель - " + audi.getModel() + "\nГод выпуска - " + audi.getYearOfIssue());
-                } break;
+                        System.out.println("Марка - " + toyota.getBrand() + "\nМодель - " + toyota.getModel() + "\nГод выпуска - " + toyota.getYearOfIssue());
+                    }
+                    break;
+                    case "Mercedes-Benz": {
+                        System.out.println("Марка - " + mercedes_benz.getBrand() + "\nМодель - " + mercedes_benz.getModel() + "\nГод выпуска - " + mercedes_benz.getYearOfIssue());
+                    }
+                    break;
+                    case "Skoda": {
+                        System.out.println("Марка - " + skoda.getBrand() + "\nМодель - " + skoda.getModel() + "\nГод выпуска - " + skoda.getYearOfIssue());
+                    }
+                    break;
+                    case "Audi": {
+                        System.out.println("Марка - " + audi.getBrand() + "\nМодель - " + audi.getModel() + "\nГод выпуска - " + audi.getYearOfIssue());
+                    }
+                    break;
                     default:
-                    throw new IncorrectBrandNameException("Неправильное назание марки или некорректый ввод!");
+                        throw new IncorrectBrandNameException("Неправильное назание марки или некорректый ввод!");
                 }
                 break;
 
@@ -80,48 +81,43 @@ public class Main {
                 for (Car сar : cars) {
                     System.out.println(сar.getModel());
                 }
-                    Scanner scanner1 = new Scanner(System.in);
-                    String models = scanner1.nextLine();
+                Scanner scanner1 = new Scanner(System.in);
+                String models = scanner1.nextLine();
 
-                    switch (models){
-                        case "Captiva":
-                        {
-                            System.out.println("Вы выбрали "+ chevrolet.getBrand() + chevrolet.getModel() +"- "+chevrolet.getYearOfIssue()+ " года выпуска. Поздравляем с покупкой!");
-                        }
-                        break;
-                        case "Camry":
-                        {
-                            System.out.println("Вы выбрали "+ toyota.getBrand() + toyota.getModel() +"- "+toyota.getYearOfIssue()+ " года выпуска. Поздравляем с покупкой!");
-                        }
-                        break;
-                        case "A-Class":
-                        {
-                            System.out.println("Вы выбрали "+ mercedes_benz.getBrand() + mercedes_benz.getModel() +"- "+ mercedes_benz.getYearOfIssue()+ " года выпуска. Поздравляем с покупкой!");
-                        }
-                        break;
-                        case "Rapid":
-                        {
-                            System.out.println("Вы выбрали "+ skoda.getBrand() + skoda.getModel()+"- " + skoda.getYearOfIssue()+ " года выпуска. Поздравляем с покупкой!");
-                        }
-                        break;
-                        case "A5":
-                        {
-                            System.out.println("Вы выбрали "+ audi.getBrand() + audi.getModel()+"- " + audi.getYearOfIssue()+ " года выпуска. Поздравляем с покупкой!");
-                        }
-                        break;
-                        default:
-                            throw new NoModelException("Такой модели нет в списке или она указана некорректно!");
+                switch (models) {
+                    case "Captiva": {
+                        System.out.println("Вы выбрали " + chevrolet.getBrand() + chevrolet.getModel() + "- " + chevrolet.getYearOfIssue() + " года выпуска. Поздравляем с покупкой!");
                     }
                     break;
+                    case "Camry": {
+                        System.out.println("Вы выбрали " + toyota.getBrand() + toyota.getModel() + "- " + toyota.getYearOfIssue() + " года выпуска. Поздравляем с покупкой!");
+                    }
+                    break;
+                    case "A-Class": {
+                        System.out.println("Вы выбрали " + mercedes_benz.getBrand() + mercedes_benz.getModel() + "- " + mercedes_benz.getYearOfIssue() + " года выпуска. Поздравляем с покупкой!");
+                    }
+                    break;
+                    case "Rapid": {
+                        System.out.println("Вы выбрали " + skoda.getBrand() + skoda.getModel() + "- " + skoda.getYearOfIssue() + " года выпуска. Поздравляем с покупкой!");
+                    }
+                    break;
+                    case "A5": {
+                        System.out.println("Вы выбрали " + audi.getBrand() + audi.getModel() + "- " + audi.getYearOfIssue() + " года выпуска. Поздравляем с покупкой!");
+                    }
+                    break;
+                    default:
+                        throw new NoModelException("Такой модели нет в списке или она указана некорректно!");
+                }
+                break;
             case 4:
-                System.out.println( chevrolet.getBrand() + chevrolet.getModel() +"- "+chevrolet.getYearOfIssue()+ " года выпуска.");
-                System.out.println( toyota.getBrand() + toyota.getModel() +"- "+toyota.getYearOfIssue()+ " года выпуска.");
-                System.out.println( mercedes_benz.getBrand() + mercedes_benz.getModel() +"- "+mercedes_benz.getYearOfIssue()+ " года выпуска.");
-                System.out.println( skoda.getBrand() + skoda.getModel() +"- "+skoda.getYearOfIssue()+ " года выпуска.");
-                System.out.println( audi.getBrand() + audi.getModel() +"- "+audi.getYearOfIssue()+ " года выпуска.");
+                System.out.println(chevrolet.getBrand() + chevrolet.getModel() + "- " + chevrolet.getYearOfIssue() + " года выпуска.");
+                System.out.println(toyota.getBrand() + toyota.getModel() + "- " + toyota.getYearOfIssue() + " года выпуска.");
+                System.out.println(mercedes_benz.getBrand() + mercedes_benz.getModel() + "- " + mercedes_benz.getYearOfIssue() + " года выпуска.");
+                System.out.println(skoda.getBrand() + skoda.getModel() + "- " + skoda.getYearOfIssue() + " года выпуска.");
+                System.out.println(audi.getBrand() + audi.getModel() + "- " + audi.getYearOfIssue() + " года выпуска.");
 
                 break;
-                default:
+            default:
                 throw new IncorrectNumberException("Вы ввели неверный номер!");
         }
     }

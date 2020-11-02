@@ -8,28 +8,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList<Buyers> buyers1 = new LinkedList<>();
-        buyers1.add(new Buyers("Milk", "bread", "avocado"));
-
-        LinkedList<Buyers> buyers2 = new LinkedList<>();
-        buyers2.add(new Buyers("Cheese", "croissant", "melon"));
-
-        LinkedList<Buyers> buyers3 = new LinkedList<>();
-        buyers3.add(new Buyers("Yogurt", "flour", "pepper"));
+        Buyers first = new Buyers("Milk", "bread", "avocado");
+        Buyers second = new Buyers("Cheese", "croissant", "melon");
+        Buyers third = new Buyers("Yogurt", "flour", "pepper");
 
         PriorityQueue<Buyers> queue = new PriorityQueue<>();
-        for (Buyers b : buyers1) {
-            queue.add(b);
-        }
+            queue.add(first);
+            queue.add(second);
+            queue.add(third);
 
-        for (Buyers b : buyers2) {
-            queue.add(b);
-        }
-
-        for (Buyers b : buyers3) {
-            queue.add(b);
-        }
-        System.out.println("Очередь покупателей" + queue + "\n");
+            System.out.println("Очередь покупателей" + queue + "\n");
 
         int counts;
         int sum = 0;

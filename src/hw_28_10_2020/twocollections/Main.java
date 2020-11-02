@@ -4,16 +4,6 @@ import java.util.*;
 
 
 public class Main {
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
     public static void main(String[] args) {
 
         Map<Integer, String> playersArsenal = new TreeMap<>();
@@ -28,12 +18,21 @@ public class Main {
         for (Map.Entry<Integer, String> entry : playersArsenal.entrySet()) {
             names.add(entry.getValue());
         }
-        System.out.println("Футболисты Arsenal "+names);
+        System.out.println("Футболисты Arsenal: "+"\n"+names);
 
        LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
         for (Integer key : playersArsenal.keySet()) {
             numbers.add(key);
         }
-        System.out.println("Номера игроков "+ numbers);
+        System.out.println("Номера игроков: "+"\n"+numbers);
+
+        //  или так
+        /*
+        Set <Integer> keys = playersArsenal.keySet();
+        for(Integer i : keys){
+            System.out.println(i);
+        }
+         */
     }
+
 }

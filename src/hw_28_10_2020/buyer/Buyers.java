@@ -9,6 +9,9 @@ public class Buyers implements Comparable<Buyers> {
     String flour_products;
     String plant_products;
 
+    public Buyers() {
+    }
+
     @Override
     public String toString() {
         return "Buyers(" + dairy_products + ", " +
