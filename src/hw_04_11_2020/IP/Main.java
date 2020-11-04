@@ -19,8 +19,8 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
 
-// 127.0.0.1
-        boolean ip = Pattern.matches("^\\d+." + "\\d+." + "\\d+." + "\\d+$", str);
+// 127.0.0.1  255.255.255.0
+        boolean ip = Pattern.matches("^\\d{3}." + "\\d{1,3}." + "\\d{1,3}." + "\\d{1}$", str);
         if (ip == true) {
             System.out.println("IP адрес введен верно!");
         } else {

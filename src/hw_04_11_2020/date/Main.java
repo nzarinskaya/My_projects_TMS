@@ -10,7 +10,7 @@ public class Main {
         String s = scanner.nextLine();
 
         // 2019/11/15 13:00:00
-        boolean date = Pattern.matches("^\\d+/" + "\\d+/" + "\\d+" + "\\s" + "\\d+:" + "\\d+:" + "\\d+$", s);
+        boolean date = Pattern.matches("^\\d{4}/" + "\\d{2}/" + "\\d{2}" + "\\s" + "\\d{2}:" + "\\d{2}:" + "\\d{2}$", s);
         if (date == true) {
             System.out.println("Вы ввели дату в верном формате!");
         } else {
