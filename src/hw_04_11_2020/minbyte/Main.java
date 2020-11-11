@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main extends Min {
+import static hw_04_11_2020.minbyte.Min.getMin;
+
+public class Main  {
     public static void main(String[] args) throws IOException {
         System.out.println("Введите путь к файлу!");
         Scanner scanner = new Scanner(System.in);
