@@ -7,7 +7,9 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main extends Max {
+import static hw_04_11_2020.maxbyte.Max.getMax;
+
+public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Введите путь к файлу!");
         Scanner scan = new Scanner(System.in);
